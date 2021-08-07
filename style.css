@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --purple: #5288E2;
+    --green: #15CDCB;
+    --bg-dark: #212226;
+    --light-grey: #E8DEDE;
+    --menu-height: 75px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--bg-dark);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+     color:root var(--light-grey);
+ }
+
+button {
+    background: var(--purple);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header {
+    height: calc(100vh - var(--menu-height));
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width:50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container img {
+    display: none;
+}
+
+header .container h1 {
+    color: var(--green);
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    height: var(--menu-height);
+    background: var(--bg-dark);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a {
+    font-size: 24px;
+    color: var(--green);
+    text-decoration: none;  
+}
+
+nav ul a svg {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+
+    
+    nav ul a {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+}
+/*Responsividade para tablet*/
+@media (max-width: 767px) {
+    
+    header .container img {
+        display: inline;
+        margin-bottom: 70px;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul a {
+        font-size: 16px;
+    }
+}
+/*Responsividde para celular*/
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav {
+        padding: 0 ;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
