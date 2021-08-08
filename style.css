@@ -23,7 +23,7 @@ body, button, input, select, textarea {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 40px;
 }
 
 h2 {
@@ -94,7 +94,7 @@ nav ul {
 }
 
 nav ul a {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--green);
     text-decoration: none;  
 }
@@ -145,6 +145,10 @@ nav ul a svg {
 
     nav {
         padding: 0 ;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
     }
 
     nav ul a {
