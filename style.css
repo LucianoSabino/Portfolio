@@ -380,6 +380,14 @@ footer {
         height: 100%;
     }
 
+    .portfolio h1 {
+        margin-bottom: 45px;
+    }
+
+    .portfolio-card {
+        margin-left: 100px;
+    }
+
     .portfolio-conteiner {
         display: block;
         margin: 0 150px;
@@ -414,6 +422,12 @@ footer {
 
     nav ul a {
         font-size: 16px;
+    }
+
+    .portfolio-card {
+        width: 1900%;
+        margin: 0 auto 25px;
+        
     }
 }
 /*Responsividde para celular*/
@@ -457,5 +471,10 @@ footer {
 
     .curriculum-info {
         padding: 0 15px;
+    }
+
+    .portfolio-card {
+        max-width: 400px;
+        margin-left: -120px;
     }
 }
