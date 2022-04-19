@@ -102,16 +102,27 @@ nav {
     justify-content: space-between;
     padding: 0 100px;
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 99;
 }
 
-nav img {
-    height: 45px;
+nav h2 {
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+nav h2 span {
+    color: var(--green);
+} 
+
+nav h2 span:hover {
+    color: var(--light-grey);
 }
 
 nav ul {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
 }
@@ -137,8 +148,12 @@ nav ul a svg {
     text-align: center;
 }
 
+.container h1 {
+    margin-bottom: 20px;
+}
+
 .about-ne .img-container {
-    width: 50%;
+    width: 55%;
     text-align: center;
 }
 
@@ -152,20 +167,14 @@ nav ul a svg {
     text-align: center;
     margin: 150px 0;
     padding: 0 100px;
+    
 }
 
-.services-conteiner  {
+.services-conteiner, .portfolio-conteiner {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 60px auto 0;
-}
-
-.portfolio-conteiner {
-    display: flex;
-    max-width: 1200px;
-    margin: 60px auto 0;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -181,6 +190,7 @@ nav ul a svg {
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .services .services-conteiner .service-card img {
@@ -189,18 +199,21 @@ nav ul a svg {
 }
 
 
-
-.service-card + .service-card {
-    margin-left: 10px;
-}
-
 .portfolio {
     padding: 0 100px;
     text-align: center;
     background: url('assets/bg.png');
     margin-bottom: 100px;
-    height: 100%;
+    height: 200%;
 }
+
+/*.portfolio-conteiner {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}*/
 
 .portfolio-card {
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
@@ -212,8 +225,9 @@ nav ul a svg {
     text-align: left;
     padding: 50px 25px;
     margin-bottom: 15px;
-    
 }
+
+
 
 .portfolio-card button {
     margin-top: 20px;
@@ -325,6 +339,19 @@ p {
     justify-content: space-around;
 }
 
+.social-media a {
+    margin-left: 10px;
+}
+
+.secondary-button a:hover {
+    color: var(--light-grey);
+}
+
+.secondary-button a {
+    text-decoration: none;
+    color: var(--green);
+}
+
 footer {
     text-align: center;
     margin-bottom: 40px;
@@ -336,7 +363,7 @@ footer {
         width: 100%;
     }
 
-    
+   
     nav ul a {
         font-size: 18px;
     }
@@ -361,7 +388,7 @@ footer {
         padding: 0;
     }
 
-    .services .services-conteiner {
+    .services .services-conteiner, .portfolio .portfolio-conteiner {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
@@ -371,12 +398,12 @@ footer {
         height: 394px;
     }
 
-    .service-card + .service-card {
+    .service-card + .service-card, .portfolio-card + .portfolio-card {
         margin-left: 0;
         margin-top: 20px;
     }
 
-    .portfolio {
+    /*.portfolio {
         height: 100%;
     }
 
@@ -391,7 +418,7 @@ footer {
     .portfolio-conteiner {
         display: block;
         margin: 0 150px;
-    }
+    }*/
 
     .curriculum .container {
         flex-wrap: wrap;
@@ -412,23 +439,21 @@ footer {
         margin-bottom: 70px;
     }
 
-    nav img {
+    nav img, h2 {
         display: none;
     }
 
     nav ul {
         padding: 0;
+        margin: 0 auto;
     }
+    
 
     nav ul a {
         font-size: 16px;
     }
 
-    .portfolio-card {
-        width: 1900%;
-        margin: 0 auto 25px;
-        
-    }
+    
 }
 /*Responsividde para celular*/
 @media (max-width: 480px) {
@@ -437,6 +462,7 @@ footer {
     }
 
     nav {
+        overflow-x: hidden;
         padding: 0 ;
         position: fixed;
         width: 100%;
@@ -446,6 +472,10 @@ footer {
 
     nav ul a {
         font-size: 12px;
+    }
+
+    nav ul {
+        width: 100%;
     }
 
     nav ul a svg {
@@ -473,8 +503,7 @@ footer {
         padding: 0 15px;
     }
 
-    .portfolio-card {
-        max-width: 400px;
-        margin-left: -120px;
+    .contact .social-media {
+        flex-wrap: wrap;
     }
 }

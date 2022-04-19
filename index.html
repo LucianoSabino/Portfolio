@@ -7,6 +7,7 @@
     <title>Luciano Sabino</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">  
 </head>
 <body>
     <header>
@@ -15,25 +16,26 @@
             <h2>Hellou</h2>
             <h1>I am Luciano Sabino</h1>
             <p>Programador Front-End, aqui está uma breve descrição do que eu amo e sei fazer!</p>
-            <button>Entre em contato</button>
+            <button onclick="window.open('https://api.whatsapp.com/send?phone=5575999871618')" >Entre em contato</button>
         </div>
     </header>
     <nav>
-        <img src="assets/logo.png" alt="logo">
+        <h2> <span>Luciano</span> Sabino</h2>
         <ul>
-            <a href="#aboutme"><i data-feather="user"></i>Sobre me</a>
+            <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
             <a href="#services"><i data-feather="briefcase"></i>Habilidades</a>
-            <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+            <a href="#portfolio"><i data-feather="image"></i>Projetos</a>
             <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
             <a href="#contact"><i data-feather="send"></i>Contato</a>
         </ul>
     </nav>
     <section id="aboutme" class="about-ne">
         <div class="container">
-            <h1>Sobre me</h1>
-            <p>Meu nome é Lucino Sabino Da Silva Neto, tenho 18 anos e moro em Salvdor - BA, trabalho desde dos meus 14 anos, tenho experiência em Auxiliar Administrativo e Operador de Caixa.<br>Sou uma pessoa entusiasmada, adoro aprender coisas novas a cada dia, com pensamentos fara da caixa adoro fazer mais do que foi pedido, e entregar o máximo de me.
-                <br>Ter um espaço onde eu possa ser criativo e me sentir importante é a chave principal para me, em qualquer área.
-                O que me deixa feliz no campo profissional é a troca de informações, ensinar e ser ensinado faz quem sou.
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Lucino Sabino Da Silva Neto, tenho 18 anos e moro em Salvdor - BA, trabalho desde dos meus 13 anos, tenho experiência em Auxiliar Administrativo e informática.
+                <br>Sou uma pessoa entusiasmada, adoro aprender coisas novas a cada dia, com pensamentos fara da caixa adoro fazer mais do que foi pedido, e entregar o máximo de mim.
+                <br>Ter um espaço onde eu possa ser criativo e mim sentir importante é a chave principal para mim, em qualquer área.
+                O que mim deixa feliz no campo profissional é a troca de informações, ensinar e ser ensinado faz quem sou.
                 <br>Amo toco violão 😊, ler um bom livro. Gosto de está entre amigos e familiares, amente de um belo fim de tarde e de uma boa música, para apreciar o pôr do sol.
             </p>
         </div>
@@ -46,32 +48,78 @@
         <p>Em busca da minha primeira experiência profissional na área de tecnologia e desnvolvimento.<br>Aprofundando os meus conhecimeto em <b style="font-size: 1.2rem;">VUE JS</b>.</p>
         <div class="services-conteiner">
             <div class="service-card">
-                <img src="assets/html.png" alt="Ícone de terminal">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Ícone de terminal">
                 <h2>HTML</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi.</p>
             </div>
             <div class="service-card">
-                <img src="assets/css.png" alt="Ícone de código">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Ícone de código">
                 <h2>CSS</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi.</p>
             </div>
             <div class="service-card">
                 <img src="assets/js.png" alt="Ícone de diamante">
                 <h2>JAVASCRIPT</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi.</p>
             </div>
-            <!-- <div class="service-card">
+            <div class="service-card">
                 <img src="assets/vue.png" alt="Ícone de diamante">
                 <h2>VEU JS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi. </p>
-            </div> -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" />
+                <h2>GIT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                <h2>Bootstrap</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates qui dicta, voluptatum fuga modi.</p>
+            </div>
         </div>
     </section>
-    <section id="portfolio" class="portfolio">
+    
+   <section id="portfolio" class="portfolio">
         <h1 class="title-gren">Projetos</h1>
-        
 
         <div class="portfolio-conteiner">
+            <div class="portfolio-card">
+                <div class="img-container">
+                    <img src="assets/projetos-gif/registration-form.gif" alt="Foto projeto">
+                </div>
+                <div class="languagem-containe">
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                    </ul>
+                </div>
+                <p>Formulário de cadastro</p>
+                <p>Uma página de cadastro, que consulta a API do ViaCep e retorna as informações para usuário.</p>
+                <button><a href="https://github.com/LucianoSabino/registration-form" target="-blank">GitHub</a></button>
+                <button><a href="https://lucianosabino.github.io/registration-form/" target="_blank">App</a></button>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="img-container">
+                    <img src="assets/projetos-gif/projeto-poo.gif" alt="Foto projeto">
+                </div>
+                <div class="languagem-containe">
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                    </ul>
+                </div>
+                <p>Formulário de cadastro</p>
+                <p>
+                    Interface gráfica de ingredientes de uma salada, projeto simples, mas de bastanteaprendizado (Manipulação POO, Modularização e importação, Exportação e importação de objetos literais, Refatoração de código, Atribuição de responsabilidade), gostei muito do desfio.
+                </p>
+                <button><a href="https://github.com/LucianoSabino/Projeto-Poo" target="-blank">GitHub</a></button>
+                <button><a href="https://projeto-poo.netlify.app/" target="_blank">App</a></button>
+            </div>
+
             <div class="portfolio-card">
                 <div class="img-container">
                     <img src="assets/projetos-gif/landing-pages-city.gif" alt="Foto projeto">
@@ -83,42 +131,27 @@
                         <li>js</li>
                     </ul>
                 </div>
-                <p><b>Landing-pages-city</b></p>
-                <p>Uma landing-page de apresentação de duas cidades, <b><i>Canada</i></b> e <b><i>Estados Unidos</i></b>.<br>Objetivo treinar o Js.</p>
-                <button><a href="https://github.com/LucianoSabino/landing-page">GitHub</a></button>
-                <button><a href="https://landing-page-city.netlify.app/">Veja no Netlify</a></button>
+                <p><b> Landing-page-city </b></p>
+                <p>Uma landing-page de apresentação de duas cidades, <b><i>Canada</i></b> e <b><i>Estados Unidos</i></b>.<br></p>
+                <button><a href="https://github.com/LucianoSabino/landing-page" target="_blank">GitHub</a></button>
+                <button><a href="https://landing-page-city.netlify.app/" target="_blank">App</a></button>
             </div>
 
             <div class="portfolio-card">
                 <div class="img-container">
-                    <img src="assets/projetos-gif/starbuckes.gif" alt="Foto projeto">
+                    <img src="assets/projetos-gif/projeto-spotify.gif" alt="Foto projeto">
                 </div>
                 <div class="languagem-containe">
                     <ul>
                         <li>html</li>
                         <li>css</li>
+                        <li>js</li>
                     </ul>
                 </div>
-                <p>Linktree</p>
-                <p>Uma landing-page de uma empresa multinacional norte-americana, com a maior cadeia de cafeterias do mundo, a <b><i>Starbucks</i></b>.<br>Objetivo terinar o Html e Css, para criação de layout.</p>
-                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/website-moderno">GitHub</a></button>
-                <button><a href="https://website-moderno.netlify.app/">Veja no Netlify</a></button>
-            </div>
-
-            <div class="portfolio-card">
-                <div class="img-container">
-                    <img src="assets/projetos-gif/landingpage-academia.gif" alt="Foto projeto">
-                </div>
-                <div class="languagem-containe">
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                    </ul>
-                </div>
-                <p>Landinpage-Academia</p>
-                <p>Uma landing-page de uma academia fictícia.<br>Objetivo treianar o Css, tratamento da img fundo, Transition, ::before</p>
-                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/landingpage-academia">GitHub</a></button>
-                <button><a href="https://landingpage-academia.netlify.app/">Veja no Netlify</a></button>
+                <p>Spotify-Youtube</p>
+                <p>Criação de play de musica, quase parecido com o Spotify aprofundando conhecimento em js.</p>
+                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/landingpage-academia" target="_blank">GitHub</a></button>
+                <button><a href="https://paly-musica.netlify.app/" target="_blank">App</a></button> 
             </div>
 
             <div class="portfolio-card">
@@ -134,40 +167,39 @@
                 </div>
                 <p>Relógio</p>
                 <p>Desafio proposto, é desafio feito.<br>Um pequeno projeto Js, onde pega a hora, minutos e segundos atual, e mostra na tela</p>
-                <button><a href="https://github.com/LucianoSabino/projetos-Js/tree/main/projeto-rel%C3%B3gio">GitHub</a></button>
+                <button><a href="https://github.com/LucianoSabino/projetos-Js/tree/main/projeto-rel%C3%B3gio" target="_blank">GitHub</a></button>
             </div>
 
             <div class="portfolio-card">
                 <div class="img-container">
-                    <img src="assets/projetos-gif/projeto-spotify.gif" alt="Foto projeto">
+                    <img src="assets/projetos-gif/starbuckes.gif" alt="Foto projeto">
                 </div>
                 <div class="languagem-containe">
                     <ul>
                         <li>html</li>
                         <li>css</li>
-                        <li>js</li>
                     </ul>
                 </div>
-                <p>Spotify-Youtube</p>
-                <p>Criação de play de musica, quase parecido com o Spotify.<br>Objetivo Aprofundando conhecimento em js.</p>
-                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/landingpage-academia">GitHub</a></button> 
+                <p>Starbucke</p>
+                <p>Uma landing-page de uma empresa multinacional norte-americana, com a maior cadeia de cafeterias do mundo, a <b><i>Starbucks</i></b>.</p>
+                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/website-moderno" target="_blank">GitHub</a></button>
+                <button><a href="https://website-moderno.netlify.app/" target="_blank">App</a></button>
             </div>
 
             <div class="portfolio-card">
                 <div class="img-container">
-                    <img src="assets/projetos-gif/netflix.png" alt="Foto projeto">
+                    <img src="assets/projetos-gif/landingpage-academia.gif" alt="Foto projeto">
                 </div>
                 <div class="languagem-containe">
                     <ul>
                         <li>html</li>
                         <li>css</li>
-                        <li>js</li>
                     </ul>
                 </div>
-                <p>Linktree</p>
-                <p>Projeto feito usando html, css e js com o objetivo de ser um agrupador de links para o instagram.</p>
-                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/landingpage-academia">GitHub</a></button>
-                <button><a href="https://sabino-netflix.netlify.app/">Veja no Netlify</a></button>
+                <p>Landinpage-Academia</p>
+                <p>Uma landing-page de uma academia fictícia.<br></p>
+                <button><a href="https://github.com/LucianoSabino/landingpages/tree/main/landingpage-academia" target="_blank">GitHub</a></button>
+                <button><a href="https://landingpage-academia.netlify.app/" target="_blank">App</a></button>
             </div>
         </div>
     </section>
@@ -183,9 +215,9 @@
                     <span>Telefone</span><b>(75) 999871618</b>
                     <span>Email</span><b>lb255043@gmail.com</b>
                     <span>Freelance</span><b>Disponível</b>
-                    <span>Experiencia</span><b>HTML, CSS, JS, Vue Js</b>
+                    <span>Experiencia</span><b>HTML, CSS, JS, Vue Js, Git, Sass, Bootstrap</b>
                 </div>
-                <button class="secondary-button"><img src="assets/save.png" alt="">Baixe meu currículo completo</button>
+                <button class="secondary-button"><img src="assets/save.png" alt="Curriculo"><a href="cv/CV Luciano Sabino.pdf" type="application/pdf" target="_blank">Baixe meu currículo completo</a></button>
             </div>
         </div>
     </section>
@@ -194,9 +226,11 @@
         <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo! </p>
         <button onclick="window.open('https://api.whatsapp.com/send?phone=5575999871618')">Entre em contato</button>
         <div class="social-media">
-            <a href=""><img src="assets/insta.png" alt="instagram"></a>
-            <a href=""><img src="assets/linkedin.png" alt="linkedin"></a>
-            <a href="https://api.whatsapp.com/send?phone=5575999871618"><img src="assets/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.instagram.com/luuciano_barbosa/"  target="_blank"><img src="	https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/luciano-sabino-da-silva-neto-60338a219/"  target="_blank"><img src="	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
+            <a href="https://api.whatsapp.com/send?phone=5575999871618"  target="_blank"><img src="	https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="whatsapp"></a>
+            <a href="mailto:lb255043@gmail.com"  target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
+            <a href="https://github.com/LucianoSabino"  target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
         </div>
     </section>
     <footer><p>Made by Luciano Sabino-2022</p></footer>
